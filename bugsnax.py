@@ -1,7 +1,11 @@
 import requests
 
-url = "https://www.bugsnaxapi.com/api/"
+url = "https://www.bugsnaxapi.com/api/bugsnax/"
 
 response = requests.get(url)
 
-print(response.json())
+res = response.json()
+data = res['bugsnax']
+
+for item in data:
+	print(item)
