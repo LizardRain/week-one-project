@@ -1,2 +1,2 @@
 # I don't have anything yet so idk what I'm supposed to put here
-![example workflow](https://github.com/LizardRain/week-one-project/actions/workflows/.github/workflows/badge.svg)
+![example workflow](https://github.com/LizardRain/week-one-project/.github/workflows/badge.svg)
