@@ -12,5 +12,3 @@ bugsnax_df.to_sql('bugsnak', con=engine, if_exists='replace', index=False)
 
 query_result = engine.execute("SELECT * FROM bugsnak").fetchall()
 print(pd.DataFrame(query_result))
-
-
