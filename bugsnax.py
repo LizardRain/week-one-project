@@ -5,7 +5,7 @@ url = "https://www.bugsnaxapi.com/api"
 
 def get_bugsnax():
     response = requests.get(url + '/bugsnax')
-    res =  response.json()
+    res = response.json()
     return res['bugsnax']
 
 
