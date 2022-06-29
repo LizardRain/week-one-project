@@ -11,9 +11,11 @@ def get_bugsnax():
 
 def get_location():
     response = requests.get(url + '/locations')
-    return response.json()
+    res = response.json()
+    return res['locations']
 
 
 def get_grumpus():
     response = requests.get(url + '/grumpuses')
-    return response.json()
+    res = response.json()
+    return res['grumpuses']
