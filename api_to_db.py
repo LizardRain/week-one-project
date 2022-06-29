@@ -10,7 +10,7 @@ bugsnax_df = pd.DataFrame.from_records(bugsnax_dict, exclude=['location'])
 location_df = pd.DataFrame.from_records(location_dict,
                                         exclude=['bugsnax', 'inhabitants'])
 grumpus_df = pd.DataFrame.from_records(grumpus_dict,
-                                       exclude=['fears', 'hates', 
+                                       exclude=['fears', 'hates',
                                                 'locations', 'loves'])
 
 engine = db.create_engine('sqlite:///bugsnax_db.db')
