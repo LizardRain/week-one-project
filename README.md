@@ -18,7 +18,7 @@
 * When you press another button after that, the old name will be erased and the new name will be written in its place
 
 # HOW IT WORKS
-1. A GET request to the Bugsnax API [insert link here] retreives the data for all Bugsnax
+1. A GET request to the [Bugsnax API](https://github.com/samuel-pratt/bugsnax-api/) retreives the data for all Bugsnax
 2. The name of each Bugsnax is parsed out of this response
 3. Each name is given a button
 4. When the button is pressed, a class method is run which allows a turtle to draw the word
