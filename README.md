@@ -1,4 +1,16 @@
 ![example workflow](https://github.com/LizardRain/week-one-project/actions/workflows/style.yaml/badge.svg)
+# Bugsnax App
+
+## Running locally
+
+Requires git and python to run.
+```
+git clone https://github.com/LizardRain/week-one-project.git
+cd week-one-project
+pip install requests
+python bugsnax_app.py
+```
+
 
 # SET-UP
 1. download the files
