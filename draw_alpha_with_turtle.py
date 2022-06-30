@@ -6,26 +6,36 @@ import tkinter as tk
 class DrawAlpha:
     def __init__(self, x_start: float, y_start: float, title: str):
         self.ALPHA_DICT = {
-            "A": self.__draw_cap_a, "B": self.__draw_cap_b, "C": self.__draw_cap_c, "D": self.__draw_cap_d,
+            "A": self.__draw_cap_a, "B": self.__draw_cap_b,
+            "C": self.__draw_cap_c, "D": self.__draw_cap_d,
             "E": self.__draw_cap_e, "F": self.__draw_cap_f,
-            "G": self.__draw_cap_g, "H": self.__draw_cap_h, "I": self.__draw_cap_i, "J": self.__draw_cap_j,
+            "G": self.__draw_cap_g, "H": self.__draw_cap_h,
+            "I": self.__draw_cap_i, "J": self.__draw_cap_j,
             "K": self.__draw_cap_k, "L": self.__draw_cap_l,
-            "M": self.__draw_cap_m, "N": self.__draw_cap_n, "O": self.__draw_cap_o, "P": self.__draw_cap_p,
+            "M": self.__draw_cap_m, "N": self.__draw_cap_n,
+            "O": self.__draw_cap_o, "P": self.__draw_cap_p,
             "Q": self.__draw_cap_q, "R": self.__draw_cap_r,
-            "S": self.__draw_cap_s, "T": self.__draw_cap_t, "U": self.__draw_cap_u, "V": self.__draw_cap_v,
+            "S": self.__draw_cap_s, "T": self.__draw_cap_t,
+            "U": self.__draw_cap_u, "V": self.__draw_cap_v,
             "W": self.__draw_cap_w, "X": self.__draw_cap_x,
-            "Y": self.__draw_cap_y, "Z": self.__draw_cap_z, "a": self.__draw_low_a, "b": self.__draw_low_b,
+            "Y": self.__draw_cap_y, "Z": self.__draw_cap_z,
+            "a": self.__draw_low_a, "b": self.__draw_low_b,
             "c": self.__draw_low_c, "d": self.__draw_low_d,
-            "e": self.__draw_low_e, "f": self.__draw_low_f, "g": self.__draw_low_g, "h": self.__draw_low_h,
+            "e": self.__draw_low_e, "f": self.__draw_low_f,
+            "g": self.__draw_low_g, "h": self.__draw_low_h,
             "i": self.__draw_low_i, "j": self.__draw_low_j,
-            "k": self.__draw_low_k, "l": self.__draw_low_l, "m": self.__draw_low_m, "n": self.__draw_low_n,
+            "k": self.__draw_low_k, "l": self.__draw_low_l,
+            "m": self.__draw_low_m, "n": self.__draw_low_n,
             "o": self.__draw_low_o, "p": self.__draw_low_p,
-            "q": self.__draw_low_q, "r": self.__draw_low_r, "s": self.__draw_low_s, "t": self.__draw_low_t,
+            "q": self.__draw_low_q, "r": self.__draw_low_r,
+            "s": self.__draw_low_s, "t": self.__draw_low_t,
             "u": self.__draw_low_u, "v": self.__draw_low_v,
-            "w": self.__draw_low_w, "x": self.__draw_low_x, "y": self.__draw_low_y, "z": self.__draw_low_z,
+            "w": self.__draw_low_w, "x": self.__draw_low_x,
+            "y": self.__draw_low_y, "z": self.__draw_low_z,
             " ": self.__draw_space, ".": self.__draw_period,
             "?": self.__draw_question_mark, "!": self.__draw_exclamation_mark,
-            "(": self.__draw_open_parenthesis, ")": self.__draw_closed_parenthesis}
+            "(": self.__draw_open_parenthesis,
+            ")": self.__draw_closed_parenthesis}
         self.screen = Screen()
         self.screen.title(title)
         self.screen.clear()
