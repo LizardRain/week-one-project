@@ -25,9 +25,8 @@ class BugsnaxFrame(tk.Frame):
             elif i >= 96:
                 col = 4
 
-            tk.Button(self, text=name, 
-                      command=lambda bug_name=name: self.draw_name(bug_name)).grid(row=row, 
-                                                                                   column=col)
+            tk.Button(self, text=name, command=lambda bug_name=name:
+            self.draw_name(bug_name)).grid(row=row, column=col)
 
     def draw_name(self, name: str):
         DrawAlpha.draw_word(name)
